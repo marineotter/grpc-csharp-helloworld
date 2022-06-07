@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package protos;
+
+option csharp_namespace = "grpc_csharp_helloworld";
+
+service UserManager {
+  rpc ListUser(ListUserRequest) returns (ListUserResponse);
+}
+
+message User {
+  int64 id = 1;
+  string display_name = 2;
+}
+
+message ListUserRequest {}
+
+message ListUserResponse {
+  repeated User users = 1;
+}
