@@ -18,4 +18,5 @@ $ dotnet --version
 3. `dotnet build` で一度ビルドしておく。
 4. Properties/launchSettings.json を編集し、httpのみのlistenに変更。
 5. Protos フォルダのprotoファイルを使用したいものに差し替え。.csprojファイルの定義も同様に差し替え。 Services フォルダのサービスも作り変え。
-
+6. （脱線）`dotnet add package Grpc.AspNetCore.Server.Reflection` でgRPC Reflectionで使用するパッケージを追加。
+7. （脱線）Reflectionを実装。
