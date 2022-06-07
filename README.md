@@ -16,4 +16,4 @@ $ dotnet --version
 1. `dotnet new grpc` で.NET 6.0のプロジェクトを作成。
 2. `dotnet new gitignore` で.gitignoreファイルを作成。
 3. `dotnet build` で一度ビルドしておく。
-
+4. `Properties/launchSettings.json` を編集し、httpのみのlistenに変更。
